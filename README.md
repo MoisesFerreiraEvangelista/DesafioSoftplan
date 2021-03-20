@@ -1,4 +1,4 @@
-# Desafio Softpan 
+# Desafio Softplan 
 
 ## Instruções para execução em ambiente docker
 
