@@ -23,7 +23,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Staging
       - ASPNETCORE_URLS=http://+      
       - ApiJurosUrlBase=http://API_1
-      - UrlGit=https://github.com/MoisesFerreiraEvangelista    
+      - UrlGit=https://github.com/MoisesFerreiraEvangelista/DesafioSoftplan    
     depends_on:
       - api1
    
