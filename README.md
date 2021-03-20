@@ -7,14 +7,15 @@ Para iniciar o serviço
 ```bash
 docker-compose up -d
 ``` 
-Para interromper o serviço
-````bash
-docker-compose down
-````
 Acesse as APIs nas seguintes urls
 
 - API 1 http://localhost:8081
 - API 2 http://localhost:8080
+
+Para interromper o serviço
+````bash
+docker-compose down
+````
 
 ## Execução dos testes
 
