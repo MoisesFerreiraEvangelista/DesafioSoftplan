@@ -1,0 +1,32 @@
+﻿version: "3.6"
+
+networks: 
+  moises:
+
+services:
+  api1:
+    build: ./src/API_1
+    container_name: API_1
+    ports:
+      - 8081:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Staging
+      - ASPNETCORE_URLS=http://+    
+    networks:
+      - moises  
+  api2:
+    build: .
+    container_name: API_2
+    ports:
+      - 8080:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Staging
+      - ASPNETCORE_URLS=http://+      
+      - ApiJurosUrlBase=http://API_1
+      - UrlGit=https://github.com/MoisesFerreiraEvangelista    
+    depends_on:
+      - api1
+   
+    networks:
+      - moises
+      
