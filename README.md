@@ -3,7 +3,7 @@
 ## Instruções para execução em ambiente docker
 
 Realize o clone do projeto e no diretorio `DesafioSoftplan` execute a liha de comando abaixo
-Para iniciar o serviço
+> Para iniciar o serviço
 ```bash
 docker-compose up -d
 ``` 
@@ -12,7 +12,7 @@ Acesse as APIs nas seguintes urls
 - API 1 http://localhost:8081
 - API 2 http://localhost:8080
 
-Para interromper o serviço
+> Para interromper o serviço
 ````bash
 docker-compose down
 ````
